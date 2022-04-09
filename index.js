@@ -20,6 +20,5 @@ toggleButton.addEventListener("click", () => {
     currentWindow.alt = "Window by night time";
     audioNighttime.play();
   }
-
   windowFrame.appendChild(currentWindow);
 });

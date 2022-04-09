@@ -1,4 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .currentWindow {
   height: 30em;
   width: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
