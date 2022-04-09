@@ -6,6 +6,7 @@ toggleButton.addEventListener("click", () => {
   count++;
   windowFrame.innerHTML = "";
   let currentWindow = document.createElement("img");
+  currentWindow.classList.add("currentWindow");
 
   if (count % 2 == 0) {
     currentWindow.src = "./img/day.PNG";
