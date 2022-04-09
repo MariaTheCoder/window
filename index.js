@@ -1,7 +1,19 @@
 const windowFrame = document.getElementById("window-container");
+const toggleButton = document.getElementById("toggle-time");
+let count = 0;
 
-let windowByDaytime = document.createElement("img");
-windowByDaytime.src = "./img/day.PNG";
-windowByDaytime.alt = "Window by daytime";
+toggleButton.addEventListener("click", () => {
+  count++;
+  windowFrame.innerHTML = "";
+  let currentWindow = document.createElement("img");
 
-windowFrame.appendChild(windowByDaytime);
+  if (count % 2 == 0) {
+    currentWindow.src = "./img/day.PNG";
+    currentWindow.alt = "Window by daytime";
+  } else {
+    currentWindow.src = "./img/night.PNG";
+    currentWindow.alt = "Window by night time";
+  }
+
+  windowFrame.appendChild(currentWindow);
+});
